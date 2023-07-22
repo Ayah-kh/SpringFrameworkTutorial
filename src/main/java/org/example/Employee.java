@@ -1,5 +1,6 @@
 package org.example;
 
+//Bean or Model or POJO (Plain Old Java Object)
 public class Employee {
     //Attributes
     int eId;
@@ -39,5 +40,14 @@ public class Employee {
 
     public void seteAddress(String eAddress) {
         this.eAddress = eAddress;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "eId=" + eId +
+                ", eName='" + eName + '\'' +
+                ", eAddress='" + eAddress + '\'' +
+                '}';
     }
 }
