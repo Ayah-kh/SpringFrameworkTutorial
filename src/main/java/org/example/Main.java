@@ -8,5 +8,8 @@ public class Main {
 
         ApplicationContext context=new ClassPathXmlApplicationContext("employee.xml");
 
+        Employee e1=(Employee) context.getBean("employee1");
+        Employee e2= context.getBean("employee2",Employee.class);
+
     }
 }
