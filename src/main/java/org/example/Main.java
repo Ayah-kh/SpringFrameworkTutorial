@@ -10,10 +10,10 @@ public class Main {
                 new ClassPathXmlApplicationContext("employee.xml");
 
         Employee e1=(Employee) context.getBean("employee1");
-        Employee e2= context.getBean("employee2",Employee.class);
+//        Employee e2= context.getBean("employee2",Employee.class);
 
         System.out.println("Employee 1 "+e1);
-        System.out.println("Employee 2 "+e2);
+//        System.out.println("Employee 2 "+e2);
 
     }
 }

@@ -4,16 +4,22 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="address" class="org.example.Address">
+        <property name="city" value="Dabouq"/>
+        <property name="state" value="Amman"/>
+        <property name="zipCode" value="11101"/>
+    </bean>
+
     <bean id="employee1" class="org.example.Employee">
         <property name="eId" value="12345"/>
         <property name="eName" value="John Doe"/>
-        <property name="eAddress" value="123 Main Street"/>
+        <constructor-arg ref="address"/>
     </bean>
 
-    <bean id="employee2" class="org.example.Employee">
-        <property name="eId" value="2159"/>
-        <property name="eName" value="Jack"/>
-        <property name="eAddress" value="Tree st."/>
-    </bean>
+<!--    <bean id="employee2" class="org.example.Employee">-->
+<!--        <property name="eId" value="2159"/>-->
+<!--        <property name="eName" value="Jack"/>-->
+<!--        <property name="eAddress" value="Tree st."/>-->
+<!--    </bean>-->
 
 </beans>

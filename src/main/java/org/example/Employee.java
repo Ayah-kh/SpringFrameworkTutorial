@@ -40,4 +40,13 @@ public class Employee {
     public Address geteAddress() {
         return eAddress;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "eId=" + eId +
+                ", eName='" + eName + '\'' +
+                ", eAddress=" + eAddress +
+                '}';
+    }
 }
