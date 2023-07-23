@@ -13,7 +13,8 @@
     <bean id="employee1" class="org.example.Employee">
         <property name="eId" value="12345"/>
         <property name="eName" value="John Doe"/>
-        <constructor-arg ref="address"/>
+<!--        <constructor-arg ref="address"/>-->
+        <property name="eAddress" ref="address"/>
     </bean>
 
 <!--    <bean id="employee2" class="org.example.Employee">-->

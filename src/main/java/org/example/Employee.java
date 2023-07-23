@@ -11,9 +11,9 @@ public class Employee {
     }
 
     //Constructor Injection
-    public Employee(Address eAddress) {
-        this.eAddress = eAddress;
-    }
+//    public Employee(Address eAddress) {
+//        this.eAddress = eAddress;
+//    }
 
     //Setter Injection
     public void seteAddress(Address eAddress) {
