@@ -23,4 +23,8 @@
 <!--        <property name="eAddress" value="Tree st."/>-->
 <!--    </bean>-->
 
+
+<!--    <bean id="collegeBean" class="org.example.Collage">-->
+<!--    </bean>-->
+
 </beans>
