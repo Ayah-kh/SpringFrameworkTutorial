@@ -10,11 +10,14 @@ public class Main {
         ApplicationContext context=
                 new ClassPathXmlApplicationContext("beans.xml");
 
-        Employee e1=(Employee) context.getBean("employee1");
-//        Employee e2= context.getBean("employee2",Employee.class);
+        Collage collegeBean = context.getBean("collegeBean", Collage.class);
+        System.out.println("college object created");
 
-        System.out.println("Employee 1 "+e1);
-//        System.out.println("Employee 2 "+e2);
+//        Employee e1=(Employee) context.getBean("employee1");
+////        Employee e2= context.getBean("employee2",Employee.class);
+//
+//        System.out.println("Employee 1 "+e1);
+////        System.out.println("Employee 2 "+e2);
 
     }
 }

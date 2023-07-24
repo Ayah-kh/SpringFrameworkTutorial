@@ -4,6 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <context:component-scan base-package="com.example"/>
+
     <bean id="address" class="org.example.Address">
         <property name="city" value="Dabouq"/>
         <property name="state" value="Amman"/>
