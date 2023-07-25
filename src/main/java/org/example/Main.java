@@ -13,6 +13,7 @@ public class Main {
 
         Collage collegeBean = context.getBean("collegeBean", Collage.class);
         System.out.println("college object created: "+collegeBean);
+        collegeBean.test();
 
 
 //        Employee e1=(Employee) context.getBean("employee1");
