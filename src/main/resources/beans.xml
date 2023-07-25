@@ -1,8 +1,9 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+ http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
     <context:component-scan base-package="com.example"/>
 
@@ -15,18 +16,22 @@
     <bean id="employee1" class="org.example.Employee">
         <property name="eId" value="12345"/>
         <property name="eName" value="John Doe"/>
-<!--        <constructor-arg ref="address"/>-->
+        <!--        <constructor-arg ref="address"/>-->
         <property name="eAddress" ref="address"/>
     </bean>
 
-<!--    <bean id="employee2" class="org.example.Employee">-->
-<!--        <property name="eId" value="2159"/>-->
-<!--        <property name="eName" value="Jack"/>-->
-<!--        <property name="eAddress" value="Tree st."/>-->
-<!--    </bean>-->
+    <!--    <bean id="employee2" class="org.example.Employee">-->
+    <!--        <property name="eId" value="2159"/>-->
+    <!--        <property name="eName" value="Jack"/>-->
+    <!--        <property name="eAddress" value="Tree st."/>-->
+    <!--    </bean>-->
 
 
-<!--    <bean id="collegeBean" class="org.example.Collage">-->
-<!--    </bean>-->
+    <!--    <bean id="collegeBean" class="org.example.Collage">-->
+    <!--    </bean>-->
+
+
 
 </beans>
+
+
