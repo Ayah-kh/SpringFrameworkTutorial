@@ -1,19 +1,19 @@
 package org.example;
 
-import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        ApplicationContext context=
+        AnnotationConfigApplicationContext context=
                 new AnnotationConfigApplicationContext(ConfigClass.class);
 
         Collage collegeBean = context.getBean("collegeBean", Collage.class);
         System.out.println("college object created: "+collegeBean);
         collegeBean.test();
+        context.close();
 
 
 //        Employee e1=(Employee) context.getBean("employee1");

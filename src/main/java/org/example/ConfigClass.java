@@ -12,6 +12,8 @@ public class ConfigClass {
    }
     @Bean
     public Collage collegeBean(){
-        return new Collage(principalBean());
+        Collage collage = new Collage();
+        collage.setPrincipal(principalBean());
+        return collage;
     }
 }

@@ -6,10 +6,7 @@ import org.springframework.stereotype.Component;
 public class Collage {
 
     private Principal principal;
-
-    public Collage(Principal principal) {
-        this.principal = principal;
-    }
+    private Teacher teacher;
 
     public void setPrincipal(Principal principal) {
         this.principal = principal;
