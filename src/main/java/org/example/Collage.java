@@ -11,6 +11,10 @@ public class Collage {
         this.principal = principal;
     }
 
+    public void setPrincipal(Principal principal) {
+        this.principal = principal;
+    }
+
     public void test(){
         principal.principleInfo();
         System.out.println("testing this method");
