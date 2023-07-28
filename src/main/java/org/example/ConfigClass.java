@@ -10,7 +10,7 @@ public class ConfigClass {
     public Principal principalBean(){
        return new Principal();
    }
-    @Bean(name = "collBean")
+    @Bean
     public Collage collegeBean(){
         return new Collage(principalBean());
     }
