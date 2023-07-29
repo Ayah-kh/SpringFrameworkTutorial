@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Collage {
 
+
     private Principal principal;
     private Teacher teacher;
 

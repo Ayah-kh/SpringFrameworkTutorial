@@ -10,7 +10,7 @@ public class Main {
         AnnotationConfigApplicationContext context=
                 new AnnotationConfigApplicationContext(ConfigClass.class);
 
-        Collage collegeBean = context.getBean("collegeBean", Collage.class);
+        Collage collegeBean = context.getBean("collage", Collage.class);
         System.out.println("college object created: "+collegeBean);
         collegeBean.test();
         context.close();
