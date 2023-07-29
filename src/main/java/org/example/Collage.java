@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class Collage {
 
     @Value("${college.Name}")
+//    @Value("The Great Collage")
     private String collegeName;
     @Autowired
     private Principal principal;
