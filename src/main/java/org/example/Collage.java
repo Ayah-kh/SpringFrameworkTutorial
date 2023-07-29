@@ -6,12 +6,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class Collage {
 
-    @Autowired
     private Principal principal;
-    @Autowired
     private Teacher teacher;
 
-//    @Autowired
+    public Collage(Principal principal, Teacher teacher) {
+        this.principal = principal;
+        this.teacher = teacher;
+    }
+
+    //    @Autowired
 //    public void setPrincipal(Principal principal) {
 //        this.principal = principal;
 //    }
