@@ -9,20 +9,16 @@ public class Collage {
     private Principal principal;
     private Teacher teacher;
 
-    public Collage(Principal principal, Teacher teacher) {
+
+        @Autowired
+    public void setPrincipal(Principal principal) {
         this.principal = principal;
-        this.teacher = teacher;
     }
 
-    //    @Autowired
-//    public void setPrincipal(Principal principal) {
-//        this.principal = principal;
-//    }
-//
-//    @Autowired
-//    public void setTeacher(Teacher teacher) {
-//        this.teacher = teacher;
-//    }
+    @Autowired
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
 
     public void test() {
         principal.principleInfo();
