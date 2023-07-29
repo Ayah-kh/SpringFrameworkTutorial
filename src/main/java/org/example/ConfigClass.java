@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages ="org.example" )
 public class ConfigClass {
 
-    @Bean
+   @Bean
     public Teacher mathTeacherBean(){
         return new MathTeacher();
     }
-
+/*
    @Bean
     public Principal principalBean(){
        return new Principal();
@@ -24,4 +24,6 @@ public class ConfigClass {
         collage.setTeacher(mathTeacherBean());
         return collage;
     }
+
+    */
 }
