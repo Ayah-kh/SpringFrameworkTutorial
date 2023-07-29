@@ -1,10 +1,14 @@
 package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Collage {
+
+    @Value("The Great Collage")
+    private String collegeName;
     @Autowired
     private Principal principal;
     @Autowired
