@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Collage {
 
-    @Value("The Great Collage")
+    @Value("${college.Name}")
     private String collegeName;
     @Autowired
     private Principal principal;
@@ -29,5 +29,6 @@ public class Collage {
         principal.principleInfo();
         teacher.teach();
         System.out.println("testing this method");
+        System.out.println("My Collage name is: "+collegeName);
     }
 }
