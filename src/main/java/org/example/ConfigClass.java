@@ -7,12 +7,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages ="org.example" )
 public class ConfigClass {
-
+/*
    @Bean
     public Teacher mathTeacherBean(){
         return new MathTeacher();
     }
-/*
+
    @Bean
     public Principal principalBean(){
        return new Principal();
