@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class ScienceTeacher implements Teacher {
     @Override
     public void teach() {
-        System.out.println("Hi, I am Tony, your math teacher");
+        System.out.println("Hi, I am Tony, your Science teacher");
     }
 }
